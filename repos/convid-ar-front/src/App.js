@@ -4,6 +4,7 @@ import './App.css';
 import FoundationFeed from './components/foundationFeed';
 import Navbar from './components/navbar'
 import Donate from './components/donate'
+import Feed from './components/feed'
 
 class App extends Component {
 
@@ -14,7 +15,7 @@ class App extends Component {
     this.changeScreenDonate = this.changeScreenDonate.bind(this);
     this.setScreen = this.setScreen.bind(this);
     this.state = {
-      screen: "donate"
+      screen: "feed"
     }
   }
 
@@ -42,11 +43,11 @@ class App extends Component {
   setScreen = () => {
     switch (this.state.screen) {
       case "found":
-        return(<FoundationFeed changeScreen={this.changeScreenDonate}/>)
-        break;
+        return(<FoundationFeed changeScreen={this.changeScreenDonate}/>);
       case "donate":
-        return(<Donate />)
-        break;
+        return(<Donate />);
+      case "feed":
+        return(<Feed />);
       default:
         return(<h3>Not page found</h3>)
     }
