@@ -1,0 +1,47 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('https://fonts.googleapis.com/css?family=Montserrat');
+}
+  
+
+.cardFoundation {
+    box-shadow: 0px 0px 30px rgba(146, 146, 146, 0.25);
+    background-color: white;
+    border-radius: 25px;
+    margin-top: 35%;
+    padding: 8%;
+    padding-top: 10%;
+    width: 90%;
+    text-align: center;
+}
+
+.cardFoundation:hover {
+    background-color: #F6F6F6;
+}
+
+.cardTitle {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 1.3rem;
+}
+
+.cardDescripcion {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-size: 15px;
+}
+
+.cardBar {
+    width: 100%;
+    height: 0.8rem;
+}
+
+.barTitle {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 13px;
+    margin-bottom: 0.7rem;
+}
