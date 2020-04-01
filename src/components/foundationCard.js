@@ -27,10 +27,10 @@ class foundationCard extends Component {
                         <Avatar alt="garrahan" className={classes.root} src={ require('./../media/garrahan.jpg')} />
                     </Grid>
                     <Grid item>
-                        <p className="cardTitle">Fundacion Garrahan</p>
+                        <p className="cardTitle">{this.props.name}</p>
                     </Grid>
                     <Grid item>
-                        <p className="cardDescripcion">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis lacus cursus, semper ipsum vel, placerat nunc.</p>
+                        <p className="cardDescripcion">{this.props.description}</p>
                     </Grid>
                     <Grid item>
                     </Grid>
@@ -40,10 +40,10 @@ class foundationCard extends Component {
                         </Grid>
                         <Grid className="progressBarContainer" container  spacing={3} justify="center">
                             <Grid item xs={8}>
-                                <Line className="cardBar" percent="40" strokeWidth="4" strokeColor="#00D1FF" trailWidth="4"/>
+                                <Line className="cardBar" percent={this.props.percent} strokeWidth="4" strokeColor="#00D1FF" trailWidth="4"/>
                             </Grid>
                             <Grid item xs={2}>
-                                <div className="barTitle">40%</div>
+                                <div className="barTitle">{this.props.percent}%</div>
                             </Grid>
                         </Grid>
                     </Grid>
